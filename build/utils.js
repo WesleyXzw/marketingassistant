@@ -39,6 +39,16 @@ exports.cssLoaders = function (options) {
     }
   }
 
+  var sassResourceLoader = {
+    loader: 'sass-resources-loader',
+    options: {
+      resources: [
+      //修改相应路径
+        path.resolve(__dirname, '../src/styles/index.scss'),
+      ]
+    }
+  }
+
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
     var loaders = [cssLoader, px2rpxLoader, postcssLoader]
