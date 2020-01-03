@@ -21,22 +21,22 @@
       "text": "首页",
       "pagePath": "pages/index/main",
       "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
+      "selectedIconPath": "static/tabs/home_active.png"
     }, {
       "text": "资讯",
       "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "iconPath": "static/tabs/news.png",
+      "selectedIconPath": "static/tabs/news_active.png"
     }, {
       "text": "客户",
       "pagePath": "pages/index/main",
-      "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
+      "iconPath": "static/tabs/person.png",
+      "selectedIconPath": "static/tabs/person_active.png"
     }, {
       "text": "数据",
       "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "iconPath": "static/tabs/data.png",
+      "selectedIconPath": "static/tabs/data_active.png"
     }],
     "position": "bottom"
   }
