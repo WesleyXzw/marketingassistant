@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="view-news-detail">
     <div class="news-detail-title">{{news.title}}</div>
-    <div class="news-detail-title">{{news.writer}} {{news.time}}</div>
-    <div class="news-detail-title">{{news.content}}</div>
+    <div class="news-detail-writer">{{news.writer}} {{news.time}}</div>
+    <div class="news-detail-content">{{news.content}}</div>
   </div>
 </template>
 
@@ -24,4 +24,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.view-news-detail {
+  padding: 10px 15px 0;
+}
+.news-detail-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.news-detail-writer {
+  font-size: 12px;
+  color: #A29B9B;
+  margin-bottom: 10px;
+}
+.news-detail-content {
+  font-size: 13px;
+  color: #0D0B0B;
+}
 </style>
