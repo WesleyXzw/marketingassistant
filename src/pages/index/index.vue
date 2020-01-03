@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="view-index">
     <view class="weui-flex count-module">
       <view class="weui-flex__item">
         <view class="count-title">潜在客户数</view>
@@ -147,6 +147,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.view-index {
+  overflow-x: hidden;
+}
+
 .count-module {
   text-align: center;
   border: 1px solid #BBBBBB;
@@ -252,6 +256,11 @@ export default {
     border: 1px solid #BBBBBB;
     padding: 10px 104px 10px 15px;
     position: relative;
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
 
     .news-message {
       font-size: 12px;
