@@ -1,12 +1,28 @@
-// common style
-// font style
+/* common style */
+/* font */
 .red {
-  color: #df3d33;
+  color: #df3d33 !important;
 }
-// common card style
+/* wx component */
+.wx-switch-input {
+  width: 40px !important;
+  height: 20px !important;
+}
+/* false的样式 */
+.wx-switch-input::before {
+  width: 40px !important;
+  height: 20px !important;
+}
+/* true的样式 */
+.wx-switch-input::after {
+  width: 18px !important;
+  height: 18px !important;
+}
+/* defined style */
 .common-card {
   border: 1px solid #BBBBBB;
   padding: 0 15px 5px;
+  margin-bottom: 5px;
 
   .common-card-title {
     font-size: 14px;

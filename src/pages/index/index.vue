@@ -19,9 +19,9 @@
     </view>
 
     <view class="weui-flex menu">
-      <view class="weui-flex__item menu-item">
+      <view class="weui-flex__item menu-item" @click="switchWorkbench">
         <img src="" alt="">
-        <view class="menu-name">展业海报</view>
+        <view class="menu-name">工作台</view>
       </view>
       <view class="weui-flex__item menu-item">
         <img src="" alt="">
@@ -29,7 +29,7 @@
       </view>
       <view class="weui-flex__item menu-item">
         <img src="" alt="">
-        <view class="menu-name">潜在客户</view>
+        <view class="menu-name">展业海报</view>
       </view>
       <view class="weui-flex__item menu-item">
         <img src="" alt="">
@@ -42,7 +42,7 @@
       <view v-for="(remind, index) in remindList" :key="index" class="remind-item">
         <view class="remind-title">{{remind.title}}</view>
         <view class="remind-message">·{{remind.message}}</view>
-        <div class="icon-right">></div>
+        <div class="icon-arrow-right">></div>
       </view>
     </view>
 
@@ -111,6 +111,10 @@ export default {
     // 切换到资讯列表
     moreNews () {
       mpvue.switchTab({ url: '../news/news-list/main' })
+    },
+    // 切换到工作台tab
+    switchWorkbench () {
+      mpvue.switchTab({ url: '../workbench/main' })
     }
   },
   created () {
@@ -156,8 +160,6 @@ export default {
   }
 }
 .remind {
-  margin-bottom: 5px;
-
   .remind-item {
     border: 1px solid #BBBBBB;
     padding: 2px 5px;
@@ -180,7 +182,7 @@ export default {
       margin-left: 10px;
     }
 
-    .icon-right {
+    .icon-arrow-right {
       position: absolute;
       right: 10px;
       top: 0;
