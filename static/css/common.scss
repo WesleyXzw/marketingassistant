@@ -1,4 +1,9 @@
-// common css
+// common style
+// font style
+.red {
+  color: #df3d33;
+}
+// common card style
 .common-card {
   border: 1px solid #BBBBBB;
   padding: 0 15px 5px;
@@ -13,11 +18,16 @@
   
     .common-card-title-right-option {
       position: absolute;
-      right: -3px;
+      right: 0;
       top: 0;
       line-height: 30px;
       font-size: 12px;
       color: #A29B9B;
+      font-weight: 400;
+
+      &.has-arrows {
+        right: -3px;
+      }
     }
   }
 }

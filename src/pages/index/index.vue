@@ -4,17 +4,17 @@
       <view class="weui-flex__item">
         <view class="count-title">潜在客户数</view>
         <view class="count-value">11</view>
-        <view class="count-title">日增<span class="count-change">1</span></view>
+        <view class="count-title">日增<span class="red">1</span></view>
       </view>
       <view class="weui-flex__item">
         <view class="count-title">总客户数</view>
         <view class="count-value">11</view>
-        <view class="count-title">日增<span class="count-change">1</span></view>
+        <view class="count-title">日增<span class="red">1</span></view>
       </view>
       <view class="weui-flex__item">
         <view class="count-title">今日访客数</view>
         <view class="count-value">11</view>
-        <view class="count-title">日增<span class="count-change">1</span></view>
+        <view class="count-title">日增<span class="red">1</span></view>
       </view>
     </view>
 
@@ -47,7 +47,7 @@
     </view>
 
     <view class="common-card">
-      <p class="common-card-title">财经资讯<a class="common-card-title-right-option" @click="moreNews">更多资讯 ></a></p>
+      <p class="common-card-title">财经资讯<a class="common-card-title-right-option has-arrows" @click="moreNews">更多资讯 ></a></p>
       <newsList :newsList="newsList"></newsList>
     </view>
   </div>
@@ -136,9 +136,6 @@ export default {
   .count-value {
     font-size: 20px;
     color: #101010;
-  }
-  .count-change {
-    color: #DF3D33;
   }
 }
 .menu {
