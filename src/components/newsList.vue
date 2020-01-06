@@ -1,5 +1,6 @@
 <template>
-  <view>
+  <!-- 资讯列表组件 -->
+  <view class="news-list">
     <view v-for="(news, index) in newsList" :key="index" @click="viewNews(news.id)" class="news-item">
       <view class="news-message">{{news.message}}</view>
       <view class="news-time">{{news.time}}</view>
@@ -15,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.news-item {
+.news-list .news-item {
   border: 1px solid #BBBBBB;
   padding: 10px 104px 10px 15px;
   position: relative;

@@ -46,8 +46,8 @@
       </view>
     </view>
 
-    <view class="common-card news">
-      <p class="common-card-title news-head">财经资讯<a class="common-card-title-right-option" @click="moreNews">更多资讯 ></a></p>
+    <view class="common-card">
+      <p class="common-card-title">财经资讯<a class="common-card-title-right-option" @click="moreNews">更多资讯 ></a></p>
       <newsList :newsList="newsList"></newsList>
     </view>
   </div>
@@ -191,8 +191,5 @@ export default {
       line-height: 56px;
     }
   }
-}
-.news .news-head {
-  position: relative;
 }
 </style>
