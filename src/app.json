@@ -3,6 +3,7 @@
     "pages/index/main",
     "pages/news/news-list/main",
     "pages/person/main",
+    "pages/workbench/main",
     "pages/data/main",
     "pages/news/news-detail/main"
   ],
@@ -34,10 +35,10 @@
       "iconPath": "static/tabs/person.png",
       "selectedIconPath": "static/tabs/person_active.png"
     }, {
-      "text": "数据",
-      "pagePath": "pages/data/main",
-      "iconPath": "static/tabs/data.png",
-      "selectedIconPath": "static/tabs/data_active.png"
+      "text": "工作台",
+      "pagePath": "pages/workbench/main",
+      "iconPath": "static/tabs/workbench.png",
+      "selectedIconPath": "static/tabs/workbench_active.png"
     }],
     "position": "bottom"
   }

@@ -3,6 +3,21 @@
     <div class="news-detail-title">{{news.title}}</div>
     <div class="news-detail-writer">{{news.writer}} {{news.time}}</div>
     <div class="news-detail-content">{{news.content}}</div>
+
+    <div class="weui-grids news-footer">
+      <div class="weui-grid">
+        <img src="../../../../static/images/news-detail/icon_share.png" alt="">
+        <div>转发</div>
+      </div>
+      <div class="weui-grid btn-create">
+        <img class="icon-large" src="../../../../static/images/news-detail/icon_create.png" alt="">
+        <div>生成海报</div>
+      </div>
+      <div class="weui-grid">
+        <img src="../../../../static/images/news-detail/icon_transpond.png" alt="">
+        <div>朋友圈</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -25,7 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 .view-news-detail {
-  padding: 10px 15px 0;
+  padding: 10px 15px 70px;
 }
 .news-detail-title {
   font-size: 15px;
@@ -39,5 +54,37 @@ export default {
 .news-detail-content {
   font-size: 13px;
   color: #0D0B0B;
+}
+.news-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #bbbbbb;
+  overflow: visible;
+
+  .weui-grid {
+    border: 0;
+    padding: 5px 10px;
+    color: #0d0b0b;
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .icon-large {
+    width: 50px;
+    height: 50px;
+    margin-top: -32px;
+  }
+
+  .btn-create div {
+    margin-top: 6px;
+  }
 }
 </style>
