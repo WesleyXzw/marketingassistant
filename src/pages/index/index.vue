@@ -1,6 +1,6 @@
 <template>
   <div class="view-index">
-    <view class="weui-flex count-module">
+    <view class="weui-flex count-card">
       <view class="weui-flex__item">
         <view class="count-title">潜在客户数</view>
         <view class="count-value">11</view>
@@ -37,8 +37,8 @@
       </view>
     </view>
 
-    <view class="remind">
-      <p class="remind-head">今日提醒</p>
+    <view class="common-card remind">
+      <p class="common-card-title">今日提醒</p>
       <view v-for="(remind, index) in remindList" :key="index" class="remind-item">
         <view class="remind-title">{{remind.title}}</view>
         <view class="remind-message">·{{remind.message}}</view>
@@ -46,36 +46,10 @@
       </view>
     </view>
 
-    <view class="news">
-      <p class="news-head">财经资讯<a class="news-more" @click="moreNews">更多资讯 ></a></p>
+    <view class="common-card news">
+      <p class="common-card-title news-head">财经资讯<a class="common-card-title-right-option" @click="moreNews">更多资讯 ></a></p>
       <newsList :newsList="newsList"></newsList>
     </view>
-
-    
-
-    <!-- <div class="userinfo" @click="bindViewTap">
-      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-      <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />
-
-      <div class="userinfo-nickname">
-        <card :text="userInfo.nickName"></card>
-      </div>
-    </div> -->
-
-    <!-- <div class="usermotto">
-      <div class="user-motto">
-        <card :text="motto"></card>
-      </div>
-    </div> -->
-
-    <!-- <form class="form-container">
-      <input type="text" class="form-control" :value="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-    </form> -->
-
-    <!-- <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a> -->
-    <!-- <button class="weui-btn mini-btn" type="primary" size="mini">按钮</button> -->
   </div>
 </template>
 
@@ -118,11 +92,9 @@ export default {
       }]
     }
   },
-
   components: {
     newsList
   },
-
   methods: {
     bindViewTap () {
       const url = '../logs/main'
@@ -151,8 +123,7 @@ export default {
 .view-index {
   overflow-x: hidden;
 }
-
-.count-module {
+.count-card {
   text-align: center;
   border: 1px solid #BBBBBB;
   padding: 10px 0;
@@ -188,17 +159,7 @@ export default {
   }
 }
 .remind {
-  border: 1px solid #BBBBBB;
-  padding: 10px 15px 5px;
   margin-bottom: 5px;
-
-  .remind-head {
-    font-size: 14px;
-    color: #101010;
-    font-weight: 600;
-    line-height: 30px;
-    margin-left: -5px;
-  }
 
   .remind-item {
     border: 1px solid #BBBBBB;
@@ -231,26 +192,7 @@ export default {
     }
   }
 }
-.news {
-  border: 1px solid #BBBBBB;
-  padding: 10px 15px 5px;
-
-  .news-head {
-    font-size: 14px;
-    color: #101010;
-    font-weight: 600;
-    line-height: 30px;
-    margin-left: -5px;
-    position: relative;
-
-    .news-more {
-      position: absolute;
-      right: -5px;
-      top: 0;
-      line-height: 30px;
-      font-size: 12px;
-      color: #A29B9B;
-    }
-  }
+.news .news-head {
+  position: relative;
 }
 </style>

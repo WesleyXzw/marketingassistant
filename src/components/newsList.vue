@@ -21,10 +21,6 @@ export default {
   position: relative;
   margin-bottom: 5px;
 
-  &:last-child {
-    margin-bottom: 30px;
-  }
-
   .news-message {
     font-size: 12px;
     overflow: hidden;
