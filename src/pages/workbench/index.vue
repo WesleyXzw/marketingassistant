@@ -112,7 +112,6 @@ export default {
 
       .count-value {
         font-size: 20px;
-        color: #101010;
       }
 
       .count-name {
@@ -155,7 +154,6 @@ export default {
 
         .icon-arrow-right {
           margin-left: 5px;
-          color: #101010;
           font-size: 12px;
         }
       }
@@ -181,7 +179,6 @@ export default {
 
     .data-info {
       font-size: 12px;
-      color: #101010;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -211,7 +208,6 @@ export default {
       font-size: 11px;
 
       .icon-arrow-right {
-        color: #101010;
         margin-left: 5px;
       }
     }

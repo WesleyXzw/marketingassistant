@@ -140,7 +140,6 @@ ul li {
 
   .news-head {
     font-size: 14px;
-    color: #101010;
     font-weight: 600;
     line-height: 30px;
     margin-left: -5px;

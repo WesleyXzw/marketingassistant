@@ -139,7 +139,6 @@ export default {
   }
   .count-value {
     font-size: 20px;
-    color: #101010;
   }
 }
 .menu {
@@ -156,7 +155,6 @@ export default {
 
   .menu-item {
     font-size: 12px;
-    color: #101010;
   }
 }
 .remind {

@@ -162,7 +162,6 @@ ul li {
   }
   .count-value {
     font-size: 20px;
-    color: #101010;
   }
   .count-change {
     color: #DF3D33;

@@ -2,10 +2,11 @@
   "pages": [
     "pages/index/main",
     "pages/news/news-list/main",
-    "pages/person/main",
+    "pages/customer/main",
     "pages/workbench/main",
     "pages/data/main",
-    "pages/news/news-detail/main"
+    "pages/news/news-detail/main",
+    "pages/customer/customer-info/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,7 +32,7 @@
       "selectedIconPath": "static/tabs/news_active.png"
     }, {
       "text": "客户",
-      "pagePath": "pages/person/main",
+      "pagePath": "pages/customer/main",
       "iconPath": "static/tabs/person.png",
       "selectedIconPath": "static/tabs/person_active.png"
     }, {
