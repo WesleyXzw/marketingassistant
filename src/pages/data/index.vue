@@ -141,9 +141,9 @@ ul li {
   display: inline-block;
   line-height: 30px;
   top: 92px;
-  width: 80px;
+  width: 60px;
+  margin:0 30px;
   height: 30px;
-  border-radius: 4px;
   font-size: 14px;
   text-align: center;
   font-family: Microsoft Yahei;

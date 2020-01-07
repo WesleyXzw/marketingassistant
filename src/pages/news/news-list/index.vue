@@ -120,13 +120,13 @@ ul {
   border: 1px solid rgba(187, 187, 187, 1);
 }
 ul li {
-  width: 25%;
+  width: 40px;
+  margin:0px 20px;
   list-style: none;
   display: inline-block;
   line-height: 30px;
   top: 92px;
   height: 30px;
-  border-radius: 4px;
   font-size: 14px;
   text-align: center;
   font-family: Microsoft Yahei;
