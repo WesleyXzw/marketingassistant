@@ -108,20 +108,16 @@ export default {
 
 <style lang="scss" scoped>
 ul {
-  left: 0px;
-  top: 88px;
-  width: 375px;
   height: 37px;
   line-height: 20px;
   color: rgba(16, 16, 16, 1);
   font-size: 14px;
   text-align: center;
-  font-family: Arial;
   border: 1px solid rgba(187, 187, 187, 1);
 }
 ul li {
   width: 40px;
-  margin:0px 20px;
+  margin: 0px 20px;
   list-style: none;
   display: inline-block;
   line-height: 30px;
@@ -129,10 +125,9 @@ ul li {
   height: 30px;
   font-size: 14px;
   text-align: center;
-  font-family: Microsoft Yahei;
 }
 .tabActive {
-  border-bottom:1px solid #F22424;
+  border-bottom: 3px solid #F22424;
 }
 .news {
   // border: 1px solid #BBBBBB;

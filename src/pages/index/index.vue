@@ -1,7 +1,7 @@
 <template>
   <div class="view-index">
     <view class="weui-flex count-card">
-      <view class="weui-flex__item">
+      <view class="weui-flex__item" @click="viewData">
         <view class="count-title">潜在客户数</view>
         <view class="count-value">11</view>
         <view class="count-title">日增<span class="red">1</span></view>
@@ -115,6 +115,10 @@ export default {
     // 切换到工作台tab
     switchWorkbench () {
       mpvue.switchTab({ url: '../workbench/main' })
+    },
+    // 查看统计数据
+    viewData () {
+      mpvue.navigateTo({ url: '../data/main' })
     }
   },
   created () {

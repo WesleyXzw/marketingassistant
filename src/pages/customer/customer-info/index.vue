@@ -30,14 +30,14 @@
 
     <div class="customer-data">
       <div class="customer-tabs">
-        <div :class="'customer-tab' + (tabIndex === 1 ? ' actived' : '')" @click="changeTabIndex(1)">客户动态</div>
-        <div :class="'customer-tab' + (tabIndex === 2 ? ' actived' : '')" @click="changeTabIndex(2)">客户画像</div>
+        <div :class="tabIndex === 1 ? 'customer-tab actived' : 'customer-tab'" @click="changeTabIndex(1)">客户动态</div>
+        <div :class="tabIndex === 2 ? 'customer-tab actived' : 'customer-tab'" @click="changeTabIndex(2)">客户画像</div>
       </div>
-      <div class="customer-data-detail" v-show="tabIndex === 1"></div>
-      <div class="customer-data-detail" v-show="tabIndex === 2">
-        投资偏好
-        感兴趣产品
-        话题偏好
+      <div class="customer-tab-panel" v-show="tabIndex === 1"></div>
+      <div class="customer-tab-panel" v-show="tabIndex === 2">
+        <div>投资偏好</div>
+        <div>感兴趣产品</div>
+        <div>话题偏好</div>
       </div>
     </div>
 
@@ -197,7 +197,7 @@ export default {
       }
     }
 
-    .customer-data-detail {
+    .customer-tab-panel {
       min-height: 280px;
       text-align: center;
     }
@@ -209,7 +209,7 @@ export default {
     .customer-from-list {
       padding: 5px 0;
     }
-    
+
     .customer-from-item {
       text-align: center;
       width: 40px;
