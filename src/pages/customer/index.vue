@@ -6,7 +6,8 @@
       <mpvue-picker ref="mpvuePicker" :mode="mode" :pickerValueDefault="pickerValueDefault" @onChange="onChange" @onConfirm="onConfirm" @onCancel="onCancel" :pickerValueArray="pickerValueArray"></mpvue-picker>
     </div>
     <div class="tags-manage">
-      标签管理
+      <img class="icon-tags" src="../../../static/images/customer/tag.png" alt="">
+      <div>标签管理</div>
     </div>
     <div class="common-card customer-list">
       <div class="customer-item" v-for="(customer, index) in customerList" :key="index" @click="viewCustomerInfo(customer)">
@@ -122,10 +123,20 @@ export default {
 }
 .tags-manage {
   border: 1px solid #BBBBBB;
+  padding: 5px 10px;
   margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 25px;
+
+  .icon-tags {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
 }
 .customer-list {
-  padding-top: 5px;
+  padding: 5px 10px;
   min-height: 80%;
 
   .customer-item {
