@@ -20,19 +20,19 @@
 
     <view class="weui-flex menu">
       <view class="weui-flex__item menu-item" @click="switchWorkbench">
-        <img src="" alt="">
+        <img src="../../../static/images/index/work.png" alt="">
         <view class="menu-name">工作台</view>
       </view>
       <view class="weui-flex__item menu-item">
-        <img src="" alt="">
+        <img src="../../../static/images/index/shop.png" alt="">
         <view class="menu-name">产品商城</view>
       </view>
       <view class="weui-flex__item menu-item">
-        <img src="" alt="">
+        <img src="../../../static/images/index/poster.png" alt="">
         <view class="menu-name">展业海报</view>
       </view>
       <view class="weui-flex__item menu-item">
-        <img src="" alt="">
+        <img src="../../../static/images/index/card.png" alt="">
         <view class="menu-name">智能名片</view>
       </view>
     </view>
@@ -77,17 +77,17 @@ export default {
       newsList: [{
         id: 1,
         message: '最高法：涉农名工工资案中有案必立 严惩恶意欠薪',
-        pic: '../../static/images/404.jpg',
+        pic: '../../static/images/news-detail/news.jpg',
         time: '30分钟前'
       }, {
         id: 2,
         message: '最高法：涉农名工工资案中有案必立 严惩恶意欠薪',
-        pic: '../../static/images/404.jpg',
+        pic: '../../static/images/news-detail/news.jpg',
         time: '30分钟前'
       }, {
         id: 3,
         message: '最高法：涉农名工工资案中有案必立 严惩恶意欠薪hi当网红I为和地位和地位的是231二手考试宝典覅我的火神',
-        pic: '../../static/images/404.jpg',
+        pic: '../../static/images/news-detail/news.jpg',
         time: '30分钟前'
       }]
     }
@@ -154,7 +154,7 @@ export default {
   img {
     width: 40px;
     height: 40px;
-    border: 1px solid #BBBBBB;
+    // border: 1px solid #BBBBBB;
   }
 
   .menu-item {

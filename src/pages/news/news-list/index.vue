@@ -61,17 +61,17 @@ export default {
       newsList: [{
         id: 1,
         message: '最高法：涉农名工工资案中有案必立 严惩恶意欠薪',
-        pic: '../../../static/images/404.jpg',
+        pic: '../../../static/images/news-detail/news.jpg',
         time: '30分钟前'
       }, {
         id: 2,
         message: '最高法：涉农名工工资案中有案必立 严惩恶意欠薪',
-        pic: '../../../static/images/404.jpg',
+        pic: '../../../static/images/news-detail/news.jpg',
         time: '30分钟前'
       }, {
         id: 3,
         message: '最高法：涉农名工工资案中有案必立 严惩恶意欠薪hi当网红I为和地位和地位的是231二手考试宝典覅我的火神',
-        pic: '../../../static/images/404.jpg',
+        pic: '../../../static/images/news-detail/news.jpg',
         time: '30分钟前'
       }]
     }
