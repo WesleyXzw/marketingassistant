@@ -1,9 +1,11 @@
 <template>
   <div class="view-customer">
     <div class="search">
-      搜索
+      <input type="text" placeholder="搜索客户姓名">
+      <button class="weui-btn btn-select" type="primary" @click="showPicker">筛选</button>
+      <mpvue-picker ref="mpvuePicker" :mode="mode" :pickerValueDefault="pickerValueDefault" @onChange="onChange" @onConfirm="onConfirm" @onCancel="onCancel" :pickerValueArray="pickerValueArray"></mpvue-picker>
     </div>
-    <div class="tags">
+    <div class="tags-manage">
       标签管理
     </div>
     <div class="common-card customer-list">
@@ -22,7 +24,12 @@
 </template>
 
 <script>
+import mpvuePicker from 'mpvue-picker'
+
 export default {
+  components: {
+    mpvuePicker
+  },
   data () {
     return {
       customerList: [{
@@ -39,14 +46,47 @@ export default {
         news_read_count: '9',
         last_chat_time: '2分钟前',
         tags: ['高净值', '投资稳健型']
-      }]
+      }],
+      mode: 'selector',
+      pickerValueArray: [
+        {
+          label: '住宿费',
+          value: 1
+        },
+        {
+          label: '活动费',
+          value: 2
+        },
+        {
+          label: '通讯费',
+          value: 3
+        },
+        {
+          label: '补助',
+          value: 4
+        }
+      ],
+      pickerValueDefault: [1]
     }
   },
   created () {
   },
   methods: {
+    // 查看客户详情
     viewCustomerInfo (customer) {
       mpvue.navigateTo({ url: './customer-info/main' })
+    },
+    showPicker () {
+      this.$refs.mpvuePicker.show()
+    },
+    onConfirm (e) {
+      console.log(e)
+    },
+    onChange (e) {
+      console.log(e)
+    },
+    onCancel (e) {
+      console.log(e)
     }
   }
 }
@@ -55,6 +95,34 @@ export default {
 <style lang="scss" scoped>
 .view-customer {
   height: 100%;
+}
+.search {
+  position: relative;
+  height: 30px;
+  padding: 10px;
+
+  input {
+    border: 1px solid #BBBBBB;
+    height: 28px;
+    line-height: 28px;
+    width: calc(100% - 90px);
+  }
+
+  .btn-select {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: 1px solid #BBBBBB;
+    color: #101010;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+.tags-manage {
+  border: 1px solid #BBBBBB;
+  margin-bottom: 5px;
 }
 .customer-list {
   padding-top: 5px;
