@@ -11,7 +11,13 @@
 
 <script>
 export default {
-  props: ['newsList']
+  props: ['newsList', 'url'],
+  methods: {
+    // 查看资讯详情
+    viewNews (id) {
+      mpvue.navigateTo({ url: this.url })
+    }
+  }
 }
 </script>
 

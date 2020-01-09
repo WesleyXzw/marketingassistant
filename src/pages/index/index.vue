@@ -48,7 +48,7 @@
 
     <view class="common-card">
       <p class="common-card-title">财经资讯<a class="common-card-title-right-option has-arrows" @click="moreNews">更多资讯 ></a></p>
-      <newsList :newsList="newsList"></newsList>
+      <newsList :newsList="newsList" :url="'../news/news-detail/main'"></newsList>
     </view>
   </div>
 </template>
@@ -96,18 +96,14 @@ export default {
     newsList
   },
   methods: {
-    bindViewTap () {
-      const url = '../logs/main'
-      if (mpvuePlatform === 'wx') {
-        mpvue.switchTab({ url })
-      } else {
-        mpvue.navigateTo({ url })
-      }
-    },
-    // 查看资讯详情
-    viewNews (id) {
-      mpvue.navigateTo({ url: '../news/news-detail/main' })
-    },
+    // bindViewTap () {
+    //   const url = '../logs/main'
+    //   if (mpvuePlatform === 'wx') {
+    //     mpvue.switchTab({ url })
+    //   } else {
+    //     mpvue.navigateTo({ url })
+    //   }
+    // },
     // 切换到资讯列表
     moreNews () {
       mpvue.switchTab({ url: '../news/news-list/main' })

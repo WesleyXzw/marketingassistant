@@ -16,22 +16,22 @@
           </li>
       </ul>
       <div class="weui-tab__panel">
-        <div id="tab1" v-if='newTabDis1' class="weui_tab_bd_item weui_tab_bd_item_active news" >
+        <div id="tab1" v-show='newTabDis1' class="weui_tab_bd_item weui_tab_bd_item_active news" >
           <!-- <view v-for="(news, index) in newsList" :key="index" @click="viewNews(news.id)" class="news-item">
             <view class="news-message">{{news.message}}</view>
             <view class="news-time">{{news.time}}</view>
             <img :src="news.pic" alt="">
           </view> -->
-          <newsList :newsList='newsList'></newsList>
+          <newsList :newsList="newsList" :url="'../../news/news-detail/main'"></newsList>
         </div>
-        <div id="tab2" v-if='newTabDis2' class="weui_tab_bd_item weui_tab_bd_item_active news">
-          <newsList :newsList='newsList'></newsList>
+        <div id="tab2" v-show='newTabDis2' class="weui_tab_bd_item weui_tab_bd_item_active news">
+          <newsList :newsList="newsList" :url="'../../news/news-detail/main'"></newsList>
         </div>
-        <div id="tab3" v-if='newTabDis3' class="weui_tab_bd_item weui_tab_bd_item_active news">
-          <newsList :newsList='newsList'></newsList>
+        <div id="tab3" v-show='newTabDis3' class="weui_tab_bd_item weui_tab_bd_item_active news">
+          <newsList :newsList="newsList" :url="'../../news/news-detail/main'"></newsList>
         </div>
-        <div id="tab4" v-if='newTabDis4' class="weui_tab_bd_item weui_tab_bd_item_active news">
-          <newsList :newsList='newsList'></newsList>
+        <div id="tab4" v-show='newTabDis4' class="weui_tab_bd_item weui_tab_bd_item_active news">
+          <newsList :newsList="newsList" :url="'../../news/news-detail/main'"></newsList>
         </div>
       </div>
     </div>
